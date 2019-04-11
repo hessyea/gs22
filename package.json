@@ -10,13 +10,12 @@
     "hoyle": "^0.2.2",
     "node-uuid": "^1.4.1",
     "pomelo-logger": "^0.1.6",
-    "redis": "^0.12.1",
-    "log4js": "3.x"
+    "redis": "^0.12.1"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "4.x"
   },
   "scripts": {
-    	"start": "node --harmony app.js"
+    	"start": "node --harmony app.js"4.0.0
   }
 }

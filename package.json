@@ -5,13 +5,14 @@
   "version": "0.0.1",
   "private": false,
   "dependencies": {
+    "socket.io" : "0.9.x"
     "pomelo": "1.x",
     "crc": "0.2.0",
     "hoyle": "^0.2.2",
     "node-uuid": "^1.4.1",
     "pomelo-logger": "^0.1.6",
     "redis": "^0.12.1",
-    "socket.io" : "0.9.x"
+    
   },
   "engines": {
     "node": "4.x"

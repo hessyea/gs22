@@ -7,6 +7,8 @@ var stateComponent = require('./app/components/stateComponent');
 //var ChatService = require('./app/services/chatService');
 
 var app = pomelo.createApp();
+
+app.set('port', process.env.PORT || 3000);
 app.set('name', 'poker-game-stack');
 
 app.configure('production|development', function(){

@@ -1,7 +1,7 @@
 var logger = require('pomelo-logger').getLogger('game-log', __filename);
 var REDIS_CONFIG = require('../../config/redis.json');
 var redis = require('redis');
-
+var StateService;
 /**
  * Maintain a persistent store .
  *

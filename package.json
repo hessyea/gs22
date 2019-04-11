@@ -13,7 +13,7 @@
     "redis": "^0.12.1"
   },
   "engines": {
-    "node": "9.x"
+    "node": "11.x"
   },
   "scripts": {
     	"start": "node --harmony app.js"

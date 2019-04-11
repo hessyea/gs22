@@ -1,6 +1,6 @@
 var logger = require('pomelo-logger').getLogger('game-log', __filename);
 var Hand = require('./hand');
-var Player = NULL;
+var Player;
 
 module.exports  = Player = function(playerName, chips, uid, table){//Player
     this.playerName = playerName;

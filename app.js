@@ -12,7 +12,7 @@ app.set('name', 'poker-game-stack');
 app.configure('production|development', function(){
 	app.route('game', routeUtil.game);
 	app.filter(pomelo.timeout());
-    app.set('session', require('./app/config/session.json'));
+    app.set('session', require('/config/session.json'));
 });
 
 app.configure('production|development', 'game', function(){

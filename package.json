@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "private": false,
   "dependencies": {
-    "pomelo": "~1.x",
+    "pomelo": "1.x",
     "crc": "0.2.0",
     "hoyle": "^0.2.2",
     "node-uuid": "^1.4.1",

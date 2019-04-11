@@ -1,4 +1,4 @@
-module.exports = Hand = function(cards){
+module.exports  = function(cards){ //Hand
     this.cards = cards;
     var result = rankHandInt({
         cards : cards

@@ -4,17 +4,15 @@ var abuseFilter = require('./app/servers/game/filter/abuseFilter');
 var tableComponent = require('./app/components/tableComponent');
 var botComponent = require('./app/components/botComponent');
 var stateComponent = require('./app/components/stateComponent');
-//var ChatService = require('./app/services/chatService');
+var ChatService = require('./app/services/chatService');
 
 var app = pomelo.createApp();
-
-app.set('port', process.env.PORT || 3000);
 app.set('name', 'poker-game-stack');
 
 app.configure('production|development', function(){
 	app.route('game', routeUtil.game);
 	app.filter(pomelo.timeout());
-    app.set('session', require('../shared/config/session.json'));
+    app.set('session', require('./app/config/session.json'));
 });
 
 app.configure('production|development', 'game', function(){
@@ -24,9 +22,9 @@ app.configure('production|development', 'game', function(){
 //    app.load(stateComponent);
 });
 
-//app.configure('production|development', 'chat', function(){
-//    app.set('chatService', new ChatService(app));
-//});
+app.configure('production|development', 'chat', function(){
+    app.set('chatService', new ChatService(app));
+});
 
 //var timeReport = require('./app/module/timeReport');
 //app.registerAdmin(timeReport, {app: app});

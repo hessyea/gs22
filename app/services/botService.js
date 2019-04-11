@@ -1,7 +1,7 @@
 var BOT_CONFIG = require('../../config/bots.json');
 var logger = require('pomelo-logger').getLogger('game-log', __filename);
 var UserStore = require('../../app/persistence/users');
-Hand = require('hoyle').Hand;
+var Hand = require('hoyle').Hand; //var
 
 
 var BotService = function(app){

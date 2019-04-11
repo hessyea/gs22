@@ -16,6 +16,6 @@
     "node": "0.10.36"
   },
   "scripts": {
-    	"start": "node app.js"
+    	"start": "node --harmony app.js"
   }
 }

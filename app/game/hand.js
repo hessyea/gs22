@@ -1,4 +1,5 @@
-module.exports  = function(cards){ //Hand
+var Hand;
+module.exports = Hand2019-04-11T10:55:31.819622+00:00 app[api]: Release v33 created by user hasya101@gmail.com = function(cards){ //Hand
     this.cards = cards;
     var result = rankHandInt({
         cards : cards

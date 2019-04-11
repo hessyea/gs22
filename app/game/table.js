@@ -2,6 +2,7 @@ var logger = require('pomelo-logger').getLogger('game-log', __filename);
 var events = require('events');
 var Game = require('./game');
 var Player = require('./player');
+var Table;
 var GAME_SETTINGS = require('../../config/gameSettings.json');
 
 /**
@@ -17,7 +18,7 @@ var GAME_SETTINGS = require('../../config/gameSettings.json');
  * @param {object} table instance of a table
  *
  */
-module.exports  = function(smallBlind, bigBlind, minPlayers, maxPlayers, minBuyIn, maxBuyIn, gameMode, table){//Table
+module.exports  = Table = function(smallBlind, bigBlind, minPlayers, maxPlayers, minBuyIn, maxBuyIn, gameMode, table){//Table
     this.smallBlind = smallBlind;
     this.bigBlind = bigBlind;
     this.minPlayers = minPlayers;

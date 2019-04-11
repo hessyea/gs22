@@ -3,7 +3,7 @@ var uuid = require('node-uuid');
 
 
 
-module.exports = Game = function(smallBlind, bigBlind){
+module.exports = function(smallBlind, bigBlind){ //=Game
     this.id = uuid.v1();
     this.smallBlind = smallBlind;
     this.bigBlind = bigBlind;
